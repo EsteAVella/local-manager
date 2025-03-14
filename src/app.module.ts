@@ -8,10 +8,10 @@ import { Articles } from './modules/articles/ articles.entity';
     TypeOrmModule.forRoot({
       type: 'mariadb',
       host: 'localhost',
-      port: 3306,
+      port: 3307,
       username: 'esteban',
       password: 'qwe123',
-      database: 'pizza',
+      database: 'local',
       entities: [Articles],
       synchronize: true,
       migrations: ['src/migrations/.ts'],

@@ -1,12 +1,12 @@
 services:
-  mariadb:
+  db:
     image: mariadb:latest
-    container_name: local-manager-container
+    container_name: db1
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: local-manager
+      MYSQL_DATABASE: local
       MYSQL_USER: esteban
       MYSQL_PASSWORD: qwe123
     ports:
-      - '3307:3307'
+      - '3307:3306'
